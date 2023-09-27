@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team2.movie.repository">
+
+	<select id="getMovieList" resultType="com.team2.movie.DTO.MovieDTO">
+
+		select * from test_movie_details details
+		full outer join test_movie_info info on details.mi_num = info.mi_num
+		full outer join test_movie_genre genre on info.g_num = genre.g_num
+		where info.mi_condition = 0
+
+	</select>
+
+	<select id="getRankList" resultType="com.team2.movie.DTO.MovieDTO">
+
+		select * from test_movie_details details
+		full outer join test_movie_info info on details.mi_num = info.mi_num
+		full outer join test_movie_genre genre on info.g_num = genre.g_num
+		where info.mi_condition = 0
+		order by info.mi_total_point desc
+	
+	</select>
+
+
+	<select id="getCommingList"	resultType="com.team2.movie.DTO.MovieDTO">
+
+		select * from test_movie_details details
+		full outer join test_movie_info info on details.mi_num = info.mi_num
+		full outer join test_movie_genre genre on info.g_num = genre.g_num
+		where info.mi_condition = 1
+
+	</select>
+
+<!-- 	<select id="getScreeningList" resultType="com.team2.movie.DTO.MovieDTO"> -->
+
+<!-- 		elect * from test_movie_details details -->
+<!-- 		full outer join test_movie_info info on details.mi_num = info.mi_num -->
+<!-- 		full outer join test_movie_genre genre on info.g_num = genre.g_num -->
+<!-- 		where info.mi_condition = 0 -->
+
+<!-- 	</select> -->
+
+	<select id="getRecommendList" resultType="com.team2.movie.DTO.MovieDTO">
+
+		select * from test_movie_details details
+		full outer join test_movie_info info on details.mi_num = info.mi_num
+		full outer join test_movie_genre genre on info.g_num = genre.g_num
+		where genre.g_num = #{g_num}
+		order by info.mi_total_point desc
+		
+	</select>
+
+
+</mapper>
