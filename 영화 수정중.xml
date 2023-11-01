@@ -1,0 +1,187 @@
+insert into test_movie ADD CONSTRAINT PK_test_info PRIMARY KEY(mi_num)
+
+mi_title - 영화 제복
+md_num - 세부 고유정보
+mi_num - 영화정보 고유번호 
+g_num - 장르     드라마 1 로맨스 2 애니메이션 3 액션 4 어드벤처 5 호러 6 스릴러 7 범죄 8 멜로 9
+md_ditrctor - 감독
+md_actor  - 출연진 2~3 명
+md_text - 영화 소개
+md_runtime - 상영시간
+md_grade - 심의 등급
+mi_total_point
+
+mi_1 - 15 5 -0
+
+c_num 영화 댓글 
+mi_num 영화 고유번호
+m_num 맴버 고유번호
+c_comment 댓글내용
+c_point 평점
+-- 포스터 정확한 확장자명쓰기
+
+<!-- 평점 댓글 -->
+
+insert into test_comment(c_num(댓글), mi_num(영화고유번호), m_num(맴버 고유번호), c_comment(댓글 내용), c_point(평점남긴거)) 
+values(test_seq_comment.nextval, 10개정도 작성, 영화 번호(맨밑 빼고), '내용', 1~10(점수)); 맨밑 제거 
+
+예시
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 1~10, 1~10, 'asdfasdfasdf', 1~10);
+
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point,) 
+values(test_seq_comment.nextval, 1,  1, '너와나_포스터.jpg',
+'그다지 기대를 하지 않고 봤는데 연기와 스토리 모두 기대이상', 8);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 1,  2, '너와나_포스터.jpg', 
+' 영화가 끝나고 한동안 자리를 뜰수없었어요. 한번 더 보러 갈 것 같습니다.', 10, );
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 2,  3, '더킬러_포스터.jpg',
+'임무에 실패한 킬러라는 다소 진부한 소재를 마이클 패스벤더가 엄청난 연기력으로 관객을 몰입하게 합니다. 영화가 잔잔한데 흡입력이 좋아요..', 8 );
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 2,  4,'더킬러_포스터.jpg', 
+'프로페셔널해진 대가를 지불한 현대인의 측은지심.', 8);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 3,  5, '라라랜드_포스터.jpg',
+' 꿈을꾸고있는,꿈을이루고있는 꿈을 이뤄낸 모든이에게 바치는 마법같은 순간.', 8);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 3,  6, '라라랜드_포스터.jpg',
+'꿈을 향해 달려가는 주인공들의 이야기가 매력적이었습니다.', 9);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 4,  7, 마브카_포스터.jpg,
+'초등 5학년 여아는 재밌었다고 하는데 저는 잤어요...', 1);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 4,  8, 마브카_포스터.jpg,
+'영상이 이뿌고 나무 캐릭터들은 귀여웠는데 내용이 살짝 좀 지루하달까요.잠깐 졸았...8세 여아는 재미있었다네요.', 5);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 5,  9, 믿을수있는사람_포스터.jpg,
+ 단순한 탈북민에 대한 이야기가 아니라, 바로 우리들의 이야기', 10);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 5,  10,  믿을수있는사람_포스터.jpg,
+'너나 나나 이 세상 살아내기가 참 쉽지 않아', 7);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 6,  11, 바비_포스터.jpg,
+'너무오바하는거아닌가? 싶다가도 인형컨셉이니까 괜찮다고생각해요 잘봤어요.', 7);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 6,  12, 바비_포스터.jpg,
+'메세지가 상당히 노골적이다. 화면이 아기자기하고 유려하다. 연기도 참 좋다.', 8);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 7,  13, 소년들_포스터.jpg,
+ '후반 마지막을 위한 존버', 5);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 7,  14, 소년들_포스터.jpg,
+'말해도 이해못할거예요', 7);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 8,  15, '시수_포스터.jpg',
+' 잔인하지만 화끈하고 통쾌하다.특히 독특한 음향이 매력적이다', 8);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 8, 16, '시수_포스터.jpg',
+'시원시원한 액션이 재미있어요.', 8);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 9,  17, '엑소시스트_포스터.jpg,
+'이건 뭐 시리즈의 부관참시라고 해도 무방.', 3);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 9,  18, '엑소시스트_포스터.jpg,
+'엑소시스트 프랜차이즈를 관짝에 못까지 박아버린 꼴.', 4);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 10,  19, '오펜하이머_포스터.jpg,
+'단 한점을 향해 달려가는 이야기의 흡입력이 뛰어난 영화.', 9);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 10,  20, '오펜하이머_포스터.jpg,
+' 이런게 진짜 전기 영화지 후반부를 달려갈수록 오펜하이머의 심정이 더 짙게 느껴졌다', 8);
+
+<!-- 미개봉 처리 영화  -->
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 11,  Null, '익스펜더블4_포스터.jpg,
+'Null', Null);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 12,  Null, 조커_포스터.jpg,
+'Null', Null);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 13,  Null, 톡투미_포스터.jpg,
+'Null', Null);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 14,  Null, 퍼피구조대_포스터.jpg,
+'Null', Null);
+
+insert into test_comment(c_num, mi_num, m_num, c_comment, c_point) 
+values(test_seq_comment.nextval, 15,  Null, 플라워킬링문_포스터.jpg,
+'Null', Null);
+
+
+
+<!-- 영화 내용  -->
+예시		md_text - 내용이 길어서 맨뒤로 옮김, -								
+insert into test_movie_details values(test_seq.nextval, 1, 1 , mi_title, 'md_ditrctor', 'md_actor', 'md_runtime', 'md_grade', mi_total_point, 'md_text'  )
+
+insert into test_movie_details values(test_seq.nextval, 1, 1 ,'너와나', '조현철', '박혜수, 김시은', '118분', '12이상 관람가', '8.5', 
+'“오늘은_너한테_꼭_하고_싶은_말이_있는데”_수학여행을_하루앞둔_오후,_세미는_이상한_꿈에서_깨어나_하은에게로_향한다._오랫동안_눌러왔던_마음을_오늘은_반드시_전해야_할_것_같은_기분이_들었기때문이다. ')
+
+insert into test_movie_details values(test_seq.nextval, 2, 7 , '더 킬러 ,'데이빗 핀처 ', '마이클 패스벤더, 틸다 스윈튼', '118분', '15이상 관람가', '8', 
+'운명을_가를_상황에서_아슬아슬하게_표적을_놓친_암살자._세계를_넘나드는_추격전에서_고용주들,_그리고_자기_자신과_사투를_벌인다.')
+
+insert into test_movie_details values(test_seq.nextval, 3, 1 , '라라랜드', '데이미언 셔젤 ', '라이언 고슬링, 엠마 스톤', '127분', '12이상 관람가', '9.0', 
+'황홀한_사랑,_순수한_희망,_격렬한 열정..._이_곳에서_모든_감정이_폭발한다!_꿈을_꾸는_사람들을_위한_별들의_도시_‘라라랜드’._재즈_피아니스트_‘세바스찬’과_배우_지망생_‘미아’
+인생에서_가장_빛나는_순간_만난_두_사람은_미완성인_서로의_무대를_만들어가기_시작한다.')
+
+insert into test_movie_details values(test_seq.nextval, 4, 3 , '마브카_숲의_노래', '데이미언_셔젤 ', '라이언_고슬링, 엠마_스톤', '127분', '12이상 관람가', ' 8.4', 
+'오랜_전쟁의_끝,_서로의_문을_닫아_버린_마법의_숲과_인간_세상._숲의_정령이자_대자연의_새로운_수호자,_마브카는_어느_날_순수한_마음을_지닌_인간_청년_루카스와_사랑에_빠진다.')
+
+insert into test_movie_details values(test_seq.nextval, 5, 1 , '믿을_수-있는_사람', '곽은미', '이설, 오경화, 박세현', '94분', '12이상 관람가', 'NULL', 
+'눈_뜨고_코_베인다는_서울에서,_안락한_정착을_꿈꾸는_20대_한영._관광통역안내사_자격증을_취득_후,_이제_정말_돈만_벌면_될_줄_알았는데...')
+
+insert into test_movie_details values(test_seq.nextval, 6, 1 , '바비', '데이미언_셔젤 ', '라이언_고슬링, 엠마_스톤',  '127분', '12이상 관람가', '8.5', 
+'원하는_무엇이든_될_수_있는_'바비랜드'에서_살아가던_'바비'가_현실_세계와_이어진_포털의_균열을_발견하게_되고,_이를_해결하기_위해_'켄'과_예기치_못한_여정을_떠나면서_펼쳐지는_이야기')
+
+insert into test_movie_details values(test_seq.nextval, 7, 8 , '소년들', '정지성', '설경구, 유준상', '124분', '12이상 관람가', 'NULL', 
+'이것이_무슨_수사여?_똥이제_1999년_전북_삼례의_작은_슈퍼마켓에서_강도_살인_사건이_발생한다._경찰의 수사망은_단번에_동네에_사는_소년들_3인으로_좁혀지고,_하루아침에_살인자로_내몰린_이들' )
+
+insert into test_movie_details values(test_seq.nextval, 8, 4 , '시수', '얄마리_헬렌더 ', '요르마_토밀라, 악셀_헨니', '92분', '청소년 관람불가', '6', 
+'용서도,_자비도_없다!_오직_끝없는_복수만이_존재할_뿐!_제2차_세계대전_말,_전설의_퇴역_군인_‘코르피’._우연히_금_덩어리를_찾아_도시로_향하던_중,_악독한_나치_부대에게_모든_걸 잃고_만다.')
+
+insert into test_movie_details values(test_seq.nextval, 9, 6 , '엑소시스트_믿는자', '데이빗_고든 그린', '엘렌_버스틴, 레슬리_오덤_주니어', '111분', '15이상 관람가', '4',
+'한날한시에 동시에 사라졌던 ‘앤젤라’와 ‘캐서린’.기억이 전부 사라진 채 상처투성이 몸으로 돌아온 두 아이는이상 증세를 보이며 날이 갈수록 섬뜩하게 변해간다.')
+
+insert into test_movie_details values(test_seq.nextval, 10, 7 , '오펜하이머', '크리스토퍼_놀란', '킬리언_머피, 에밀리_블런트, 로버트_다우니_주니어', '180분', '15이상 관람가', '9.1',
+'“나는 이제 죽음이요, 세상의 파괴자가 되었다.” 세상을 구하기 위해 세상을 파괴할 지도 모르는 선택을 해야 하는 천재 과학자의 핵개발 프로젝트.')
+
+insert into test_movie_details values(test_seq.nextval, 11, 4 , '익스펜더블4', '스캇_워프', '제이슨_스타뎀, 메간_폭스, 50센트', '103분', '청소년 관람불가', '5',
+''테러 단체에게 핵미사일이 탈취되어 3차 세계대전이 발발할 위기의 상황에 ‘리’를 새로운 리더로 맞은 무적의 팀 익스펜더블이 작전에 투입되는데..)
+
+insert into test_movie_details values(test_seq.nextval, 12, 4 , '조커', '토드_필립스', '호아킨_피닉스, 재지_비츠', '123분', '15이상 관람가', '8.9', 
+' “내 인생이 비극인줄 알았는데, 코미디였어” 고담시의 광대 아서 플렉은 코미디언을 꿈꾸는 남자. 하지만 모두가 미쳐가는 코미디 같은 세상에서 맨 정신으로는 그가 설 자리가 없음을 깨닫게 되는데...')
+
+insert into test_movie_details values(test_seq.nextval, 13, 6 , '톡투미', '대니_필리푸', '소피_와일드, 알렉산드라_젠슨', '95분', '15이상 관람가', 'NULL',
+' STEP 1. 촛불을 켜고 저승의 문을 연다. STEP 2. 몸을 묶고 ‘죽은 자의 손’을 잡는다. STEP 3. “내게 말해”라고 속삭인다. STEP 4. 나타난 귀신에게 “널 들여보낸다”라고 말하면 빙의 완료.')
+
+insert into test_movie_details values(test_seq.nextval, 14, 3 , '퍼피구조대', '캘런 브런커', '정선혜, 박지윤', '93분', '전체관람가', '8', 
+'신비한 힘을 가진 유성이 어드벤처 시티에 떨어진 날, 퍼피 구조대는 유성에서 나온 크리스털 덕분에 초능력을 가진 ‘퍼피 히어로즈’로 변신한다.')
+
+insert into test_movie_details values(test_seq.nextval, 15, 8 , '플라워_킬링_문', '마틴_스코세이지', '레오나르도_디카프리오', '205분', '청소년 관람불가', '9',
+'‘플라워 킬링 문’은 진정한 사랑과 말할 수 없는 배신이 교차하는 서부 범죄극으로 ‘어니스트 버크하트와 ‘몰리 카일리’의 이루어질 수 없는 로맨스를 중심으로 오세이지족에게 벌어진 끔찍한 비극 실화를 그려낸다.')
+
+
