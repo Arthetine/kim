@@ -1,0 +1,48 @@
+		         영화번호   장르    제목      개봉상태        파일명
+insert into test_movie_info(mi_num, g_num, mi_title, mi_condition, mi_thumbnail)
+values(test_seq_movie.nextval, #{g_num}, #{mi_title}, #{mi_condition}, #{originFileName})
+
+insert into test_movie_info(mi_num, g_num, mi_title, mi_condition, mi_thumbnail)
+values(test_seq_movie.nextval, 1, 1, '너와나', 1, '너와나_포스터.jpg')
+
+insert into test_movie_info(mi_num, g_num, mi_title, mi_condition, mi_thumbnail)
+values(test_seq_movie.nextval, 2, 7, '더_킬러', 1, '더킬러_포스터.jpg')
+
+insert into test_movie_info(mi_num, g_num, mi_title, mi_condition, mi_thumbnail)
+values(test_seq_movie.nextval, 3, 1, '라라랜드', 1, '라라랜드_포스터.jpg')
+
+insert into test_movie_info(mi_num, g_num, mi_title, mi_condition, mi_thumbnail)
+values(test_seq_movie.nextval, 4, 3, '마브카_숲의_노래', 1, '마브카_포스터.jpg')
+
+insert into test_movie_info(mi_num, g_num, mi_title, mi_condition, mi_thumbnail)
+values(test_seq_movie.nextval, 5, 1, '믿을_수_있는_사람', 1, '믿을수있는사람_포스터.jpg')
+
+insert into test_movie_info(mi_num, g_num, mi_title, mi_condition, mi_thumbnail)
+values(test_seq_movie.nextval, 6, 1, '바비', 1, '바비_포스터.jpg')
+
+insert into test_movie_info(mi_num, g_num, mi_title, mi_condition, mi_thumbnail)
+values(test_seq_movie.nextval, 7, 8, '소년들', 1, '소년들_포스터.jpg')
+
+insert into test_movie_info(mi_num, g_num, mi_title, mi_condition, mi_thumbnail)
+values(test_seq_movie.nextval, 8, 4, '시수', 1, '시수_포스터.jpg')
+
+insert into test_movie_info(mi_num, g_num, mi_title, mi_condition, mi_thumbnail)
+values(test_seq_movie.nextval, 9, 6, '엑소시스트_믿는자', 1, '엑소시스트_포스터.jpg')
+
+insert into test_movie_info(mi_num, g_num, mi_title, mi_condition, mi_thumbnail)
+values(test_seq_movie.nextval, 10, 7, '오펜하이머', 1, '오펜하이머_포스터.jpg')
+
+insert into test_movie_info(mi_num, g_num, mi_title, mi_condition, mi_thumbnail)
+values(test_seq_movie.nextval, 11, 4, '익스펜더블4', 0, '익스펜더블4_포스터.jpg')
+
+insert into test_movie_info(mi_num, g_num, mi_title, mi_condition, mi_thumbnail)
+values(test_seq_movie.nextval, 12, 4, '조커', 0, '조커_포스터.jpg')
+
+insert into test_movie_info(mi_num, g_num, mi_title, mi_condition, mi_thumbnail)
+values(test_seq_movie.nextval, 13, 6, '톡투미', 0, '톡투미_포스터.jpg')
+
+insert into test_movie_info(mi_num, g_num, mi_title, mi_condition, mi_thumbnail)
+values(test_seq_movie.nextval, 14, 3, '퍼피구조대', 0, '퍼피구조대_포스터.jpg')
+
+insert into test_movie_info(mi_num, g_num, mi_title, mi_condition, mi_thumbnail)
+values(test_seq_movie.nextval, 15, 8, '플라워_킬링_문', 0, '플라워킬링문_포스터.jpg')
